@@ -1,15 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    colors: {
-      'primary-color': '#F9A51A'
+
+const withMT = require("@material-tailwind/react/utils/withMT");
+export default withMT(
+  {
+    content: [
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+      colors: {
+        'primary-color': '#F9A51A'
+      },
+      extend: {
+      },
     },
-    extend: {},
-  },
-  plugins: [require("daisyui")],
-}
+    plugins: [require("daisyui")],
+  }
+)
 

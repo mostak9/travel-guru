@@ -10,7 +10,7 @@ const Navbar = () => {
     <li><NavLink to={'/contact'}>Contact</NavLink></li>
     </>
   return (
-    <div className="navbar bg-base-100 max-w-7xl mx-auto mt-4">
+    <div className="navbar bg-transparent max-w-7xl mx-auto pt-4">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Navbar = () => {
           </ul>
         </div>
     <a className="btn btn-ghost normal-case text-xl"><img src={logo} className="w-28" alt="" /></a>
-    <input type="text" placeholder="Search your destination..." className="input input-bordered bg-neutral-400  bg-opacity-5 w-full max-w-xl" />
+    <input type="text" placeholder="Search your destination..." className="input input-bordered bg-neutral-400  bg-opacity-50 w-full max-w-xl" />
       </div>
       <div className="navbar-center hidden lg:flex">
       
